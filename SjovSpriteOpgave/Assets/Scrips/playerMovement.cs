@@ -18,7 +18,7 @@ public class playerMovement : MonoBehaviour
         myAnimator = GetComponent<Animator>(); //Vi giver vores myAnimator Animator componentet fra unity så vi kan ændre dens værdiger i koden så vores gut kan bevæge sig
     }
 
-    private void OnMovement(InputValue value)
+    private void OnMovement(InputValue value) //En private void der modtager et parameter som er baseret på Unities Input system og bruger den value som den sender til at få gutten til at bevæge sig
     {
         movement = value.Get<Vector2>();
         //^^Vores vector tal som vi får af at bevæge os med inputsystemet som beskriver movement'en af vores gut bliver nu sat lig movement'en så vi kan gøre klar til at rykke vores gut 
